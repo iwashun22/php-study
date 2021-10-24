@@ -8,5 +8,12 @@
 </head>
 <body>
    <h1>Hello world</h1>
+   <?php 
+      echo 'hi';
+   ?>
+   <?php 
+      $text = 'Goodbye world';
+      echo strtoupper($text);
+   ?>
 </body>
 </html>
