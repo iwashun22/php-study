@@ -9,11 +9,14 @@
 <body>
    <h1>Hello world</h1>
    <?php 
-      echo 'hi';
+      echo 'hi'; // print out 'hi'
    ?>
    <?php 
-      $text = 'Goodbye world';
-      echo strtoupper($text);
+      $text = 'goodbye world'; // assaign variable
+      echo strtoupper($text); // string to uppercase
+      echo $text[0]; // first character of the string
+      $text = str_replace("world", "html", $text); // replace some part of the string
+      echo $text;
    ?>
 </body>
 </html>
