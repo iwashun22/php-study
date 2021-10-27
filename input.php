@@ -8,11 +8,11 @@
 </head>
 <body>
    <form action="input.php" method="get">
-      <input type="text" name="name">
+      <input type="text" name="username">
       <input type="submit">
    </form>
    <?php 
-      echo $_GET["name"];
+      echo $_GET["username"];
    ?>
 </body>
 </html>
