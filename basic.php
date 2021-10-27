@@ -17,6 +17,17 @@
       echo $text[0]; // first character of the string
       $text = str_replace("world", "html", $text); // replace some part of the string
       echo $text;
+
+      echo '<hr/>';
+
+      $age = 16;
+      $weight = 59.4;
+      echo $age;
+      echo round($weight); // use a function
+
+      $num1 = 24;
+      $num2 = 31;
+      echo max($num1, $num2);
    ?>
 </body>
 </html>
