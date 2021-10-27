@@ -31,7 +31,10 @@
 
    <?php 
       $fruits = $_POST["fruits"];
-      echo $fruits[0];
+      echo "<b>Your favorite fruits are: </b>";
+      for($i = 0; $i < count($fruits); $i++){
+         echo $fruits[$i]." ";
+      }
    ?>
 </body>
 </html>
