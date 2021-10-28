@@ -31,7 +31,7 @@
 
       if(!$num) {
          echo "Put any number here";
-      } else if($num > 10) {
+      } elseif($num > 10) {
          echo "The number is bigger than 10";
       } elseif($num > 5) {
          echo "The number is bigger than 5";
