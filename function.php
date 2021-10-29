@@ -30,7 +30,7 @@
       $num = $_POST['number'];
 
       if(!$num) {
-         echo "Put any number here";
+         echo "Put any number here except 0";
       } elseif($num > 10) {
          echo "The number is bigger than 10";
       } elseif($num > 5) {
