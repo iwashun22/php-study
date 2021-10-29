@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Include other files</title>
+</head>
+<body>
+   <?php 
+      # include the content of header.html
+      include 'header.html'; 
+   ?>
+   <h3>Hello world</h3>
+</body>
+</html>
