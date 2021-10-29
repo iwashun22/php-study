@@ -57,6 +57,7 @@
    <?php 
       # Associative arrays
       # It works like a Map() in javascript
+      # careful: => this is for array, -> this is for object
       $grades = array('mike'=>'B-', 'emma'=>'A+', 'brian'=>'C+');
       $grades['johny'] = 'B+';
       $name = strtolower($_POST['name']);
