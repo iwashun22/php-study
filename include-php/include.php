@@ -7,6 +7,17 @@
    <title>Including php file</title>
 </head>
 <body>
-   
+   <?php 
+      $title = 'I\'m learning php';
+      $author = 'Shun';
+      include 'header.php';
+   ?>
+
+   <?php 
+      # you can include php file to use the functions or variables
+      include 'tools.php';
+      echo "There's $feetInMile feet in a mile<br>";
+      sayHi('everybody');
+   ?>
 </body>
 </html>
