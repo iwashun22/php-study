@@ -51,7 +51,12 @@
          }
 
          function setRating($aRating){
-            $this->rating = $aRating;
+            if(is_numeric($aRating)){
+               $this->rating = $aRating;
+            }
+            else {
+               $this->rating = 0;
+            }
          }
          function getRating(){
             return $this->rating;
