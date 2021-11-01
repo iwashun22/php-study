@@ -26,9 +26,9 @@
       ### constructor
 
       class Book {
-         var $title;
-         var $author;
-         var $pages;
+         public $title;
+         public $author;
+         public $pages;
 
          # set a default except for the book title
          function __construct($aTitle, $aAuthor=null, $aPages="not labeled"){
