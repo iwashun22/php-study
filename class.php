@@ -31,17 +31,28 @@
          var $pages;
 
          # set a default except for the book title
-         function __construct($aTitle, $aAuthor="unknown", $aPages="not labeled"){
+         function __construct($aTitle, $aAuthor=null, $aPages="not labeled"){
             $this->title = $aTitle;
             $this->author = $aAuthor;
             $this->pages = $aPages;
          }
+
+         # set a function
+         function hasAuthor(){
+            if($this->author){
+               return "<br>The author of $this->title is $this->author";
+            }
+            return "<br>$this->title's author is unknown";
+         }
       }
 
       $book1 = new Book('Hunger Games');
+      $book2 = new Book('NiceBook', 'Harris', 400);
 
       echo $book1->title;
 
+      echo $book1->hasAuthor();
+      echo $book2->hasAuthor();
    ?>
 </body>
 </html>
