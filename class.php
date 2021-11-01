@@ -26,15 +26,20 @@
       ### constructor
 
       class Book {
+         # public: can access anywhere
          public $title;
          public $author;
          public $pages;
 
+         # private: can access only in this class
+         private $rating;
+
          # set a default except for the book title
-         function __construct($aTitle, $aAuthor=null, $aPages="not labeled"){
+         function __construct($aTitle, $aAuthor=null, $aPages="not labeled", $aRating=0){
             $this->title = $aTitle;
             $this->author = $aAuthor;
             $this->pages = $aPages;
+            $this->rating = $aRating;
          }
 
          # set a function
@@ -47,7 +52,7 @@
       }
 
       $book1 = new Book('Hunger Games');
-      $book2 = new Book('NiceBook', 'Harris', 400);
+      $book2 = new Book('NiceBook', 'Harris', 400, 3.8);
 
       echo $book1->title;
 
