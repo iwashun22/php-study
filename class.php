@@ -56,6 +56,9 @@
 
       echo $book1->title;
 
+      # $book2->rating = 4.5;
+      # you can't do this because this variable is set to private
+
       echo $book1->hasAuthor();
       echo $book2->hasAuthor();
    ?>
