@@ -39,7 +39,7 @@
             $this->title = $aTitle;
             $this->author = $aAuthor;
             $this->pages = $aPages;
-            $this->rating = $aRating;
+            $this->setRating($aRating);
          }
 
          # set a function
