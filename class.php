@@ -49,9 +49,18 @@
             }
             return "<br>$this->title's author is unknown";
          }
+
+         function setRating($aRating){
+            $this->rating = $aRating;
+         }
+         function getRating(){
+            return $this->rating;
+         }
       }
 
       $book1 = new Book('Hunger Games');
+      $book1->setRating(4.2);
+
       $book2 = new Book('NiceBook', 'Harris', 400, 3.8);
 
       echo $book1->title;
@@ -61,6 +70,9 @@
 
       echo $book1->hasAuthor();
       echo $book2->hasAuthor();
+
+      echo '<br>';
+      echo $book2->getRating();
    ?>
 </body>
 </html>
